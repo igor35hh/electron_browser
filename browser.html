@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="browser.css">
+		<script type="text/javascript" src="browser.js"></script>
+	</head>
+
+	<body>
+		<div id="contrlos">
+
+			<button id="back" title="Go back" disabled="true">&#9664;</button>
+			<button id="forward" title="Go forward" disabled="true">&#9654;</button>
+			<button id="home" title="Go home">&#8962;</button>
+			<button id="reload" title="Reload">&#10227;</button>
+
+			<form id="location-form">
+				<div id="center-column">
+					<input id="location" type="text" value="http://oneworld.org/">
+				</div>
+				<input type="submit" value="Go">
+			</form>
+
+			<button id="zoom" title="Change zoom">&#128270;</button>
+			<button id="find" title="Find in page">&#128294;</button>
+
+		</div>
+		<div id="zoom-box">
+			<form id="zoom-form">
+				<input type="text" id="zoom-text">
+				<input type="submit" value="&#128270;">
+				<button id="zoom-in">&#10133;</button>
+				<button id="zoom-out">&#10134;</button>
+			</form>	
+		</div>
+		<div id="find-box">
+			<form id="find-form">
+				<input type="text" id="find-text">
+				<div id="find-results"></div>
+				<input type="submit" style="position: absolute; visibility: hidden;">
+				<button id="match-case">A</button>
+				<button id="find-backward">&#60;</button>
+				<button id="find-forward">&#62;</button>
+			</form>
+		</div>
+		<webview src="http://oneworld.org/" style="width: 640px; height: 480px"></webview>
+		<div id="sad-webview">
+			<div id="sad-webview-icon">&#9762;</div>
+			<h2 id="crashed-label">Snap!</h2>
+			<h2 id="killed-label">He's dead!</h2>
+			<p>Something went wrong while displaying this webpage.
+			To continue, reload or go to another page.</p>
+		</div>
+	</body>
+
+</html>
