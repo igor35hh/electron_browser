@@ -2,12 +2,13 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="browser.css">
-		<script type="text/javascript" src="browser.js"></script>
+		<link rel="stylesheet" href="browser.css">
+		<script src="browser.js"></script>
 	</head>
 
 	<body>
-		<div id="contrlos">
+
+		<div id="controls">
 
 			<button id="back" title="Go back" disabled="true">&#9664;</button>
 			<button id="forward" title="Go forward" disabled="true">&#9654;</button>
@@ -25,6 +26,7 @@
 			<button id="find" title="Find in page">&#128294;</button>
 
 		</div>
+
 		<div id="zoom-box">
 			<form id="zoom-form">
 				<input type="text" id="zoom-text">
@@ -33,17 +35,20 @@
 				<button id="zoom-out">&#10134;</button>
 			</form>	
 		</div>
+
 		<div id="find-box">
 			<form id="find-form">
 				<input type="text" id="find-text">
 				<div id="find-results"></div>
-				<input type="submit" style="position: absolute; visibility: hidden;">
-				<button id="match-case">A</button>
+				<input type="submit" style="position: absolute; visibility: hidden">
+				<button id="match-case">aA</button>
 				<button id="find-backward">&#60;</button>
 				<button id="find-forward">&#62;</button>
 			</form>
 		</div>
+
 		<webview src="http://oneworld.org/" style="width: 640px; height: 480px"></webview>
+
 		<div id="sad-webview">
 			<div id="sad-webview-icon">&#9762;</div>
 			<h2 id="crashed-label">Snap!</h2>
@@ -51,6 +56,7 @@
 			<p>Something went wrong while displaying this webpage.
 			To continue, reload or go to another page.</p>
 		</div>
+
 	</body>
 
 </html>

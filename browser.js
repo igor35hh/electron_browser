@@ -81,7 +81,7 @@ onload = function () {
 			decreaseZoom();
 		}
 
-		document.querySelector('#find').onclick = function(e) {
+		document.querySelector('#find').onclick = function() {
 			if (document.querySelector('#find-box').style.display == 'block') {
 				closeFindBox();
 			} else {
@@ -144,7 +144,7 @@ function doLayout() {
 	var controls = document.querySelector('#controls');
 	var controlsHeight = controls.offsetHeight;
 	var windowWidth = document.documentElement.clientWidth;
-	var windowHeight = document.documentElement.clientHigth;
+	var windowHeight = document.documentElement.clientHeight;
 	var webviewWidth = windowWidth;
 	var webviewHeight = windowHeight - controlsHeight;
 
@@ -250,7 +250,7 @@ function handleLoadStop(event) {
 
 function handleLoadAbort(event) {
 	console.log('LoadAbort');
-	console.log('url: '+event.url);
+	console.log('url: ' + event.url);
 	console.log(' isTopLevel: ' + event.isTopLevel);
 	console.log(' type: ' + event.type);
 }
